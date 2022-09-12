@@ -13,7 +13,7 @@
              consider part of the page content, they are not used by the internet and browser to 
              manage the web page      
         -->
-        <title >Basic Html Structure</title>
+        <title>Basic Html Structure</title>
         <meta charset="utf-8">
         <meta name="author" content="Randy Liu">
     </head>
@@ -22,11 +22,96 @@
             header tag h1 to h6 these are title, importantce is one (greatest) six is (least) 
             paragrath tag p: this tag indicates the content to be a paragrpath
         -->
-
+   <!--         
         <h1> Basic Html Tag</h1>
+        <h3>Paragraph Tag</h3>
         <p> This page demonstrates the basic structure of an html web page. The head area has the web
              the browser title tab specified as well as the charset defined. The body is demonstrating the h1 header tag and the paragrapth tag.
         </p>
         <p> this is another paragraph.</p>
+        If you wish to use a component of a reserved tag (or another tag) you would be in trouble using the tag
+        instead you can use special strings to represent components of the tag such as the (&lt;) and the> &gt;
+    -->
+<!-- block tag , paired
+create an ordered list using <ol>
+    create an unordered list using <ul>
+        Items created in the list are indicated using the line li
+    --></body>
+    <ol> 
+            <li>add ectention line server for go live execution from VSC</li>
+            <li>open ectentions using 5 icon by left menu either search for live server or select list</li>
+            <li>press install</li>
+                <li> to use</li>
+                
+                <li> open HTLM page</li>
+                <li> make any ajustments</li>
+                <li> save any asjustments</li>
+                <li>look for go live button</li>
+                <li>make additional adjustments</li>  
+    </ol>
+    <ul> 
+        <li> this is an unordered list</li>
+        <li> defualt display is a bulleted lsit</li>
+        <li> we will see how to remove bullentens using css styling</li>
+    </ul>
+
+    <h3> Anchor tag (aka linking to another page)</h3>
+    <!-- this is an anchor tag and is often incorrectly reffered to as the link tag, one should not use the link tage because there is actually a 
+    <link> tage used in the head section
+    this anchor tag can take you to a different location weather it be on a different website, different page in the current
+    web sit, or a different location on the current page
+
+    parameters:
+href: points to the desired location
+target: indicates the browser page display option
+    defualt is same display page
+    _blank will open a new browser tab (page)
+-->
+
+<a href="https://www.nait.ca" target="_blank>"> go to nait </a>
+        <h3>List Tags: &lt;ol&gt; and &lt;ul&gt;</h3>
+    <h3> image tag</h3>
+    <!--an empty (void) tag
+    image tag does not have a closing tag
+    the image tag has no content, however it does have paramenters
+    
+    parameters 
+    src"relatuve web site location"
+    alt="printable text if image is not found at src"
+    [title="tool tip text for the image"]
+
+    Absolute addressing is a compleye fixed file path
+        drive:/folder/.../folder/filename.ext
+
+        realative address begins at a specific point
+        for web sites, it is the "top of the web site"
+        reference to the desired file name is done by specifying 
+        the appropriate folder to desired file
+        NO DRIVE
+
+        Movement within a relative address 
+        -if only the file name is given, the location is within the 
+            same folder 
+        -movement down the file structure is by /foldername
+        -movement up the file structure is by using ..for each 
+            folder level to ascend
+
+
+        Same folder
+        ="filename/extention"
+
+        Lower folder
+        ="nextleveldownfoldername/nextlevelfoldername/fildername.ext"
+        from one lower folder to another lower folder on a different branch
+        .. for each level that needs to be ascended
+        ="../../../nextleveldownfoldername/filename.ext"
+    -->
+    <!-- 
+        combine the anchor tag and the image as the anchor tag image
+    -->
+    <a href="https://www.adobe.com" target="_blank">
+    <img src="img/photoshop.png" alt="logo photoshop"
+        title="logo image of Photoshop"></a>
+        
     </body>
 </html>
