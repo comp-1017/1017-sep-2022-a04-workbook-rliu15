@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+       
+        <title >table Demo</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Randy Liu">
+    </head>
+    <body>
+        <h1>Table Demo</h1>
+
+        <p> 
+            Looking for the Best Canadian Web Hosting? We’ve reviewed the top Canadian web hosts and below you’ll find coupons and discounts for the 
+            Top Canadian Hosting providers.  More and more Canadians are looking for their website to be hosted in Canada to benefit from search engine 
+            rankings and to ensure their privacy is protected by Canadian laws.  If you’re a Canadian business looking for a suitable hosting provider then
+             take a look at our list below of Canadian web hosts.
+        </p>
+
+        <!--
+            the border "1" will add a defualt border around the table and each cell
+        -->
+        <table border="1">
+            <thred>
+                <!-- the thread head will indicate a line for collum headers
+                the cell tag for this line will be <th>
+                    the contents of the cell will be bolded by defualt
+                
+                Optionally one can have their header titles on their rows
+                here the devoloper uses the list collum as the titles for the data
+                if you are designing your table in this fashion a the thread area is not needed and the first cell on your table body row will be a <th> cell
+            -->
+            <tr>
+            <th>Host name</th>
+            <th>bandwidth</th>
+            <th>Price</th>
+            <th>Money back</th>
+            <th>coupon</th>
+            <th>rating</th>
+        </tr>
+        
+        </thred>
+        <tbody>
+            <!--
+                tbody contains the data for the table
+                each represents a row of table data
+                think of a grid style system
+                the text will not have any styling by defualt
+
+
+                See above for using <th> cell if you wish your headings
+                    to appear on the row instad of the collum top
+
+                    by defualt you are expected to have one <th> cell for each <th> cell
+
+                        <td> cells are grouped under a <tr> set of tags
+
+
+            -->
+            <tr>
+                <td>HostUpon</td>
+                <td>Unlimited</td>
+                <td>$3.68/mon</td>
+                <td>30 days</td>
+                <td>15% off</td>
+                <td>5</td>
+
+            </tr>
+
+            <tr>
+                <td>BlueHost</td>
+                <td>Unlimited</td>
+                <td>$6.99/mo</td>
+                <td>anytime</td>
+                <td>$3.95/mo*</td>
+                <td>3</td>
+
+            </tr>
+            <tr>
+                <td>HostGator</td>
+                <td>Unlimited</td>
+                <td>$3.71/mo</td>
+                <td>45 days</td>
+                <td>20%</td>
+                <td>4</td>
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <!--
+                the tfoot section is generally used for totals, special messages, comments
+
+                data cells can be merged 
+                a set of merged td cells has a parameter cell colspan "n" where
+                "n" is the number of data cells to merge into
+                a table row should ot have a set of merged cell greater than the number of collum tables
+            
+
+            -->
+            <tr>
+                <td colspan="6">
+                    * limited to 3 months of service
+                </td>
+                <tr>
+                    <tbody>
+                        <tr>
+                            <th>
+                                row title
+                            
+                            </th>
+                            <td>
+                                <img src="img/phone.png" alt="phone img"
+                                title="some tool tip">
+                                
+                            </td>
+                            <td>
+                                <img src="img/printer.png" alt="phone img"
+                                title="some tool tip">
+                                
+                            </td>
+                            <td>
+                                <img src="img/money.png" alt="phone img"
+                                title="some tool tip">
+                                
+                            </td>
+                            <td>
+                                at you're service
+                            </td>
+                        </tr>
+                    </tbody>
+                </tr>
+            </tr>
+        </tfoot>
+        </table>
+    </body>
+</html>
