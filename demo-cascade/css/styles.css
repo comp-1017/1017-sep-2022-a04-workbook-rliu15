@@ -45,6 +45,14 @@ padding-left: 0;
 
 /*
 Classes
+
+syntax for naming is .user-name(rules)
+you are not using element names
+user name must be meaningful 
+classes can be attached to any element
+classes are independant of an element
+on html page to use::after     class=user-name [user-name] 
+
 types: user targetted class 
     pseudo class, these are attached to elements
 
@@ -55,7 +63,17 @@ types: user targetted class
     a:hover used when you hover over a link
     a:visted used when anchor tag has been clicked on perviously
     a:active used when you actually click on the link
+
+    Child selectors
+    
+    thi is a element selector within another element that is not nescisarily directed below
+    the parent element selector
+
+    upper html element (parent)
 */
+main p {
+    font-style: italic;
+}
 nav ul li a:active {
     color: red;
     font-weight: bold;
@@ -73,3 +91,11 @@ nav ul.bullet-removal {
     /*list-style-type: square;*/
     padding: 10px;
 }
+/*
+id selector
+
+similar to a class selector but is supposed to be use
+only once on a page where as a class may be used multiple times
+syntax #user-name [rules]
+on the html page: id="user-name"
+*/
