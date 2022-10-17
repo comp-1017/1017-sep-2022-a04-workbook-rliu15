@@ -1,6 +1,71 @@
+/**********************************************
+    margin: the outter most part of the box
+        represents seperation between boxes
+        horzontal margins are added together
+        vertical margins are collapsed
+            if the vertical margins are postitive then 
+            the larger of the two margins are used
+            
+    margin can be coded in various styles
+    long hand: size: margin-top; size: margin-left; size: margin-right; size: margin-bottom;
+    equal opposite sides: margin:tb rl;
+    short hand unequal: margin t r b l:
+    short hand equal margin size:*/
+
+
+
 .margin-section {
     margin: 24px 12px 24px 12px; 
 }
+/**********************************************
+    border: the outter most part of the box
+        represents outter displayable edge of the boxes
+        horzontal margins are added together
+        vertical margins are collapsed
+            if the vertical margins are postitive then 
+            the larger of the two margins are used
+            
+    border can be coded in various styles
+    long hand: border-width; : border-style; : border-color;
+    */
 .border-section {
     border: 3px solid black;
+}
+/**********************************************
+    padding: the outter most part of the box
+        represents seperation between border and content
+            
+    padding can be coded in various styles
+    long hand: size: padding-top; size: padding-left; size: padding-right; size:padding-bottom;
+    equal opposite sides: margin:tb rl;
+    short hand unequal: padding t r b l:
+    short hand equal padding size:*/
+.padding-section {
+    padding: 24px;
+}
+/**********************************************
+
+content by defualt this is the display area of your
+    element content
+    the size of your content area is dependant on
+        whether there are margin, border and/or
+        padding specified for the element
+
+calculations padge-width = lm+lp+lb content rm+rl+rb
+
+example: 960 = 0+0+0+ content +0+0+0
+    960 - (0 + 0 + 0 + 0 + 0 + 0) = content
+    960 = content
+
+    960 = 24 + 3 + 12 + 12 + 3 + 24
+    960 -(24 + 3 + 12 + 12 + 3 + 24) = content 
+    960 - 78 = content
+    882 = content
+you can specify your content area using width and size
+**********************************************/
+.width-section {
+    width: 700px;
+    margin: 24px;
+    padding: 12px;
+    border: 3px solid red;
 }
