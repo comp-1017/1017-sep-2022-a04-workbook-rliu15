@@ -33,6 +33,14 @@ main {
 	margin-top: 24px;
 	background-color: #dddddd;
 }
+/************************* 
+How to get width
+
+960= lb + lm + lp - width - rp + rm + rb
+960= 2 + 30 + 0 - width - 0 + 30 + 2
+960= width - 64
+=896
+*************************/
 main section {
 	width: 896px;
 	border: 2px solid black;
