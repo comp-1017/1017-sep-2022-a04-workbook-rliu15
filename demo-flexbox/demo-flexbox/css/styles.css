@@ -1,0 +1,85 @@
+body {
+    background: rgba(0, 0, 0, 0.01);
+    font-family: Verdana, sans-serif;
+}
+
+.container {
+    width: 960px;
+    margin: 0px auto;
+    font-size: 100%;
+    line-height: 1.5
+}
+
+/*CLEAR FIX SOLLUTION*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/*******
+margin 10px are between outter edges and boxes 
+margin of 10px bewteen the boxes (red & blue)
+footer 10px margin 
+
+Calc:
+960= (lm + lb + lp + content + rp + rb + rm ) + (lm + lb + lp + content + rp + rb + rm )
+960= (10 + 0 + 0 + content + 0 + 0 + 0 ) + (10 + 0 + 0 + content + 0 + 0 + 0) +10
+960= 30 + 2 * content
+960 - 30 = 2 * content
+930 / 2 = content
+465= content
+*******/
+.clearfix {
+    *zoom: 1;
+}
+/**********
+defualt display of elements on your page is called "stacked"
+to get your element on the same line we use "flexbox"
+to invoke flex box use the rule
+        display: flex;
+***********/
+main {
+    background-color: lightgray;
+    display: flex;
+}
+/*********** 
+sinces there is no actual content we will simulate the content using the height of 200px
+************/
+main > div{
+    height: 200px;
+    width: 465px;
+    margin: 10px 0px 10px 10px;
+}
+.red-paint{
+    background-color: red;
+    
+}
+.blue-paint{
+    background-color: blue;
+    
+}
+.black-paint{
+    background-color: black;
+    width: 940px;
+    height: 50px;
+    margin: 0px 10px 10px 10px;
+    
+}
+footer{
+    background-color: lightgray;
+    height: 60px;
+    display: flex;
+}
