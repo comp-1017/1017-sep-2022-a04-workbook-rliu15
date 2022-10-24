@@ -41,6 +41,13 @@ Calc:
 960 - 30 = 2 * content
 930 / 2 = content
 465= content
+
+
+960= (lm + lb + lp + content + rp + rb + rm )
+960= (10 + 0 + 0 + content + 0 + 0 + 10 )
+960= 20 + content
+960- 20 = content
+content = 940
 *******/
 .clearfix {
     *zoom: 1;
@@ -50,10 +57,24 @@ defualt display of elements on your page is called "stacked"
 to get your element on the same line we use "flexbox"
 to invoke flex box use the rule
         display: flex;
+        flex box attempts to place all elements within it's "specified container area"
+        on the same line
+        flex box will automaticlly adjust measurements to get all elements to 
+        apprear on the same line
+
+    problem: i dont want all elements on the same line
+        i dont want my measurements adjusted
+    solution:
+    use "flex-wrap"
+    this will place as meany elements as possible on a single line
+    without adjusting the measurements of your element and
+    any leftover elements will wrap to the following line
+    until all elements have been displayed
 ***********/
 main {
     background-color: lightgray;
     display: flex;
+    flex-wrap: wrap;
 }
 /*********** 
 sinces there is no actual content we will simulate the content using the height of 200px
