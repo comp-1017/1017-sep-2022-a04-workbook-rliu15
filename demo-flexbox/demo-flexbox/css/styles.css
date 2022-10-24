@@ -70,6 +70,8 @@ to invoke flex box use the rule
     without adjusting the measurements of your element and
     any leftover elements will wrap to the following line
     until all elements have been displayed
+
+    flex-wrap only works if theres a "display: flex;"
 ***********/
 main {
     background-color: lightgray;
