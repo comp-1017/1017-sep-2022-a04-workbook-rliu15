@@ -1,0 +1,52 @@
+body {
+	background-color: #ffffff;
+}
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+	font-size: 100%;
+	line-height: 1.5;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+	text-align: center;
+	font-weight: 600;
+	font-family: Helvetica, Verdana, sans-serif;
+	font-size: 36px;
+	margin: 30px 0;
+}
+
+/* YOUR STYLES */
+
+
+main {
+    background-color: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*******
+width = content - padding - margin - border
+960 = content - 0 - 90 - 0
+870/3 = 290
+*******/
+main > div{
+    height: 200px;
+    width: 290px;
+    margin: 30px 0px 30px 30px;
+}
+.red-paint{
+    background-color: red;
+    
+}
+.blue-paint{
+    background-color: blue;
+    
+}
+.yellow-paint{
+	background-color: yellow;
+	margin-right: 30px;
+	margin-right: 0;
+}
