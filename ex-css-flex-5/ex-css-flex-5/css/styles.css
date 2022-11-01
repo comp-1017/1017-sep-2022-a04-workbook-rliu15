@@ -21,58 +21,78 @@ h1 {
 }
 
 /* YOUR STYLES */
-/*
-960= (lm + lb + lp + content + rp + rb + rm ) + (lm + lb + lp + content + rp + rb + rm )
-960= (10 + 2 + 0 + content + 0 + 2 + 0 ) + (10 + 2 + 0 + content + 0 + 2 + 0) +10
-960= 30 + 2 * content
-960 - 30 = 2 * content
-930 / 3 = content
-282= content
-*/
+
 main {
     background-color: lightgray;
     display: flex;
+    flex-wrap: wrap;
 }
 .border{
    border: 2px solid black;
 }
-.box{
-    height: 200px;
-    width: 282px;
-    margin: 30px 0px 30px 30px;
-	border: 2px solid black;
+/*
+960= (lm + lb + lp + content + rp + rb + rm ) + (lm + lb + lp + content + rp + rb + rm ) + + (lm + lb + lp + content + rp + rb + rm)
+960= (15m + 2b + 10p + content + 0p + 2b + 0m ) + (15m + 2b + 10p + content + 0p + 2b + 0m) + (15m + 2b + 10p + content + 0p + 2b + 0m) 
+border = 16
+margin = 60
+padding = 30
+960= 16b + 60m + 30p
+960= 854/3
+=284.67
+*/
+.topleft{
+    background-color: purple;
+    width: 284.6px;
+    height: 150px;
+    margin: 15px 0px 15px 15px;
+    padding-left: 10px;
+}
+/**
+284.6 + 284.6 + 4b + 15m + 10p
+**/
+.topright{
+    background-color: green;
+    width: 598.3px;
+    height: 150px;
+    margin: 15px 0px 15px 15px;
+    padding-left: 10px;
 }
 .middlemiddle{
     background-color: red;
-    width: 287px;
-    height: 200px;
-    margin: 15px 0px 15px 15px;
+    width: 284.6px;
+    height: 300px;
+    margin: 0px 0px 15px 15px;
     padding-left: 10px;
 }
 .middleleft{
     background-color: blue;
-	width: 287px;
-    height: 200px;
-    margin: 15px 0px 15px 15px;
+	width: 284.6px;
+    height: 300px;
+    margin: 0px 0px 15px 15px;
     padding-left: 10px;
 }
 .middleright{
 	background-color: yellow;
-	width: 287px;
-    height: 200px;
-    margin: 15px 15px 15px 15px;
+	width: 284.6px;
+    height: 300px;
+    margin: 0px 0px 15px 15px;
     padding-left: 10px;
 }
 .pink-paint{
     background-color: pink;
-    width: 960px;
+    width: 911.8px;
     height: 100px;
     margin: 0px 15px 15px 15px;
     padding-left: 10px;
 }
+/**
+284.6 + 284.6 + 4b + 15m + 10p + 284.6 + 4b + 15m + 10p
+**/
 footer{
     background-color: lightgray;
-    height: 115px;
     display: flex;  
 }
-
+.wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
