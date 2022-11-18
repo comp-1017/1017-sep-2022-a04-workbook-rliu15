@@ -7,5 +7,50 @@ body {
 	width: 960px;
 	font-size: 100%;
 	line-height: 1.5;
+	text-align: center;
 }
-
+/**
+	convert pt to px
+	pt* 1.3333 = px
+**/
+.page-header{
+	background: url(../img/header-background.png) repeat-x;
+}
+.hidden{
+	display: none;
+}
+h2,
+footer, p
+h3{
+	color: #0b777b;
+}
+section > p{
+	color: #7f8c8c;
+}
+h2{
+	font-size: 60px;
+}
+h3{
+	font-size: 45px;
+}
+section{
+	margin-top: 70px;
+}
+section footer img{
+	vertical-align: middle;
+}
+section footer{
+	margin-top: 24px;
+}
+section footer span{
+	margin: 0 20px;
+}
+footer img{
+	margin: 0 5px;
+}
+.footer-margin{
+	margin: 100px 0;
+}
+strong{
+	font-weight: bolder;
+}
