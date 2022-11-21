@@ -1,0 +1,14 @@
+body {
+	background-color: white;
+	font-size: 100%;
+	line-height: 1.5;
+}
+ 
+.container {
+	margin:0 auto;
+	width:960px;
+}
+
+.visuallyhidden {
+	display: none;
+}
