@@ -59,7 +59,7 @@ label{
     width: 300px;
     color: #333;
     font-size: 21.333px;
-   
+    margin-left: 170px;
 }
 .submit-button button:hover{
     cursor: pointer;
@@ -69,4 +69,7 @@ main{
 }
 form div{
     margin-top: 20px;
+}
+.center{
+    margin-left: 170px;
 }
