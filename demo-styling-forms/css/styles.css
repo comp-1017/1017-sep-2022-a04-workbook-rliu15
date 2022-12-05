@@ -58,3 +58,58 @@ body {
 .hidden {
     display: none;
 }
+input,
+button{
+    background-color: #efefef;
+    border: 1px soild #c4c4c4;
+    line-height: 30px;
+    width: 312px;
+    padding-left: 48px;
+}
+textarea{
+    background-color: #efefef;
+    border: 1px soild #c4c4c4;
+    line-height: 30px;
+    max-width: 312px;
+    min-width: 312px;
+    max-height: 150px;
+    min-height: 150px;
+    padding-left: 48px;
+    background-repeat: no-repeat;
+}
+label{
+    font-family: verdana;
+    display: block;
+    font-size: 12px;
+    color: #cacaca;
+}
+.your-name input{
+    background-image: url(../img/form-name-icon.gif);
+    background-repeat: no-repeat;
+}
+.email-address input{
+    background-image: url(../img/form-email-icon.gif);
+    background-repeat: no-repeat;
+}
+.phone-number input{
+    background-image: url(../img/form-phone-icon.gif);
+    background-repeat: no-repeat;
+}
+textarea{
+    background-image: url(../img/form-message-icon.gif);
+}
+.submit-button button{
+    padding: 0;
+    text-align: center;
+    width: 120px;
+    color: #8a8a8a;
+}
+.submit-button button:hover{
+    cursor: pointer;
+}
+main{
+    margin-bottom: 200px;
+}
+form div{
+    margin-top: 48px;
+}
